@@ -133,7 +133,7 @@ print('OK bye')
 # points, but if incorrect the lose 15
 
 # Rules: Please enter only "h" or "l" to indicate your play, the game ends once the
-# 8 rounds have finished. 
+# 8 rounds have finished (bonus round if reached). 
 
 # Bonus Round (Grade A Additional feature): If the player reaches 150 points (and maintains)
 # at the end of all the rounds the player is allowed to complete a bonus round. This is where the
