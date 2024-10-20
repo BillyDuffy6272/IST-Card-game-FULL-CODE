@@ -27,7 +27,7 @@ def shuffle(deckListIn):
 print('Welcome to the Game')
 print('The programmer has forgotten to give you the game instructions.')
 
-# Instructions (also found at bottom of file)
+
 # Creates a empty list to store random card values, it then defines each card (52 cards) with a value
 # based on their number, also stores the suit. This nested loop keeps repeating itself until
 # every card in a pack is defined and stored in the list
@@ -134,5 +134,9 @@ print('OK bye')
 
 # Rules: Please enter only "h" or "l" to indicate your play, the game ends once the
 # 8 rounds have finished. 
+
+# Bonus Round (Grade A Additional feature): If the player reaches 150 points (and maintains)
+# at the end of all the rounds the player is allowed to complete a bonus round. This is where the
+# player needs to guess the suit of the next card. The player can earn 40 points if correct. 
 
 # Have fun and good luck!
