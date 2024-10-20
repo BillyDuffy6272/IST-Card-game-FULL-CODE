@@ -1,53 +1,37 @@
-# ---
-# jupyter:
-#   jupytext:
-#     cell_metadata_filter: -all
-#     custom_cell_magics: kql
-#     text_representation:
-#       extension: .py
-#       format_name: percent
-#       format_version: '1.3'
-#       jupytext_version: 1.11.2
-#   kernelspec:
-#     display_name: Python 3
-#     language: python
-#     name: python3
-# ---
-
-# %%
 import random # Importing random libary - which allows the code to randomise values
 
-# %%
+
 # Defining variables for cards in a deck
 SUIT_TUPLE = ('Spades', 'Hearts', 'Clubs', 'Diamonds')
 RANK_TUPLE = ('Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King')
 
-# %%
+
 # Defining the number of cards being used
 NCARDS = 8
 
-# %%
+
 # Creating the function which simulates drawing a random card from a deck
 def getCard(deckListIn):
     thisCard = deckListIn.pop() # pops one off the top of the deck and returns it
     return thisCard
 
-# %%
+
 # Makes a copy of the starting deck and randomly shuffles it   
 def shuffle(deckListIn):
     deckListOut = deckListIn.copy()  # make a copy of the starting deck
     random.shuffle(deckListOut)
     return deckListOut
 
-# %%
+
 # Shows texts in 2 separate lines, in the terminal (spits it out, if that makes sense)
 print('Welcome to the Game')
 print('The programmer has forgotten to give you the game instructions.')
 
-# %%
+# Instructions (also found at bottom of file)
 # Creates a empty list to store random card values, it then defines each card (52 cards) with a value
 # based on their number, also stores the suit. This nested loop keeps repeating itself until
 # every card in a pack is defined and stored in the list
+
 startingDeckList = []
 # Goes through giving each card a value for each of the 4 suits (until they have all the been defined)
 for suit in SUIT_TUPLE:
@@ -58,13 +42,13 @@ for suit in SUIT_TUPLE:
         # Each card's dictionary is added to the starting deck list 
         startingDeckList.append(cardDict)
 
-# %%
+
 # Gives score a value (which will eventually be changed, it's a starting point for the user)     
 score = 50
 
 
 
-# %%
+
 while True:
     # the 'print()' is used to create a blank line for readability, it is used numerous times below
     print()
@@ -134,12 +118,12 @@ while True:
     if goAgain == 'q':
         break
 
-# %%
+
 # Prints 'OK bye' in the terminal, ending the game
 print('OK bye')
 
 
-# %% [markdown]
+
 # RULES OF THE GAME:
 
 # Gameplay: Each round the user needs to guess whether or not the next card is 
@@ -152,5 +136,3 @@ print('OK bye')
 # 8 rounds have finished. 
 
 # Have fun and good luck!
-# %% [markdown]
-#
