@@ -83,7 +83,7 @@ while True:
         # Prints the rank and suit of the next card into the terminal
         print('Next card is:', nextCardRank + ' of ' + nextCardSuit)
 
-        # FOLLOWING COMMENTS ARE FOR LINES 81 - 96:
+        # FOLLOWING COMMENTS ARE FOR LINES 90 - 105:
         # If they answered higher and got it correct their score will update to add 20 (and display correct text in terminal)
         # if they still answered higher but got it wrong, their score will minus 15 (and display incorrect text in terminal)
         # Same for lower input, their scores will update if they are correct or not (as well as correct or incorrect messages)
